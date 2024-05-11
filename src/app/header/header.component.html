@@ -1,0 +1,6 @@
+<mat-icon [matBadge]="basketList.length" matBadgeColor="warn" style="margin: 3rem;">shopping-cart</mat-icon>
+
+<button mat-flat-button color="primary" (click)="filterCategory('all')"> Tümü </button>
+@for(category of categoriesButton;track category){
+<button mat-flat-button color="primary" (click)="filterCategory(category)"> {{category}} </button>
+}

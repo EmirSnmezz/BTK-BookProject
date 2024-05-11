@@ -1,0 +1,8 @@
+<app-header (selectedCategory)="filterCategory($event)"></app-header>
+<div class="container">
+    @for (book of fiteredData; track $index) {
+    <app-book-cell [book]="book" (addBasketEvent)="addBasket($event)"></app-book-cell>
+    }
+</div>
+
+<app-footer name="Talha" [company]="company" [currentDate]="currentDate"></app-footer>

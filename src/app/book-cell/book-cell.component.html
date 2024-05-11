@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="left-side">
+        <img src="https://picsum.photos/170/170">
+    </div>
+    <div class="right-side">
+        <div>
+            <h4> {{ book?.name }} </h4>
+            <div> {{ book?.author }} </div>
+            <app-star [starNumber]="book?.star"></app-star>
+        </div>
+        <button mat-flat-button color="primary" (click)="addBasket(book)">Sepete Ekle</button>
+    </div>
+</div>

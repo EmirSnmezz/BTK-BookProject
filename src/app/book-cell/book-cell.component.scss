@@ -1,0 +1,64 @@
+:host {
+    // max-width: calc(100vw/3);
+    // width: 30%;
+    // min-width: 300px;
+    max-width: 33%;
+    // min-width: 33%;
+}
+
+.card:hover {
+    transition: 0.7s;
+    scale: 1.05;
+    background-color: rgb(219, 219, 219);
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 1rem;
+    padding: 8px;
+    width: 30%;
+    min-width: 300px;
+    max-width: min-content;
+    margin-bottom: 12px;
+    margin-right: 6px;
+    -webkit-box-shadow: 9px 6px 34px -7px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 9px 6px 34px -7px rgba(0, 0, 0, 0.14);
+    box-shadow: 9px 6px 34px -7px rgba(0, 0, 0, 0.14);
+
+    .left-side {
+        img {
+            border-radius: 1rem;
+        }
+
+    }
+
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 12px;
+        width: 100%;
+
+        button {
+            border-radius: 1rem;
+            padding: 8px;
+        }
+
+        button:hover {
+            color: blue;
+            background-color: gold;
+            transition: .7s;
+            scale: 1.05;
+        }
+    }
+}
+
+// @media screen and (max-width: 1024px) {
+//     .card {
+//         max-width:  400px;
+//         min-width:  400px;
+//         width: 400px;
+//     }
+// }
